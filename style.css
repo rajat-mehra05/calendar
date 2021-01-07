@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    font-size: 1rem;
+    position: absolute;
+    top: 13%;
+    left: 33%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: rgb(11, 26, 71);
+    padding-bottom: 1rem;
+}
+
+body {
+      background-image: linear-gradient(315deg, #e4d47d 0%, #a3a1bd 84%);
+    height: 100vh;
+    width: 100vw;
+    font-family: "Ubuntu";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    background-image: url("https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8c25vd3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    border-radius: 0.2rem;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+}
+
+header {
+    padding: 0.7rem 0 0 2rem;
+}
+
+/* year */
+header h1 {
+    font-size: 4rem;
+}
+
+/* month */
+header h3 {
+    font-size: 1.2rem;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 290px;
+    height: 190px;
+    padding: 0.2rem;
+    border-radius: 0.6rem;
+    position: absolute;
+    top: 27.5%;
+    left: 31%;
+    box-shadow: 2px 0.5px 10px #111,
+
+				-5px 5px 0px #ff1744,
+				-6px 6px 2px rgba(0,0,0,0.6),
+
+				-10px 10px 0px #1e88e5,
+				-11px 11px 2px rgba(0,0,0,0.6),
+
+				-15px 15px 0px #fdd835,
+				-16px 16px 2px rgba(0,0,0,0.6);
+}
+
+/* week */
+table th { 
+    letter-spacing: 0.025rem; 
+}
+
+/* date numbers */
+table td {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1rem;
+	transition: all 250ms ease 0s;
+}
+
+table td:hover {
+	background-color: #ff4081;
+	border-radius: 3rem;
+	color: #f2f2f2;
+	cursor: pointer;
+}
+
+/* current date */
+table tr td.current {
+	background-color: #f70057;
+	border-radius: 3rem;
+	color: #f2f2f2;
+}
+
+/* hovering on blank cells */
+.blank:hover {
+	background-color: transparent;
+	cursor: auto;
+}
